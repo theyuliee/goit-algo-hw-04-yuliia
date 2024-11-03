@@ -1,7 +1,7 @@
 from pathlib import Path
 
 
-def totalsalary(path):
+def total_salary(path):
    try:
         with open(path, 'r') as fh:
             lines = fh.readlines()
@@ -19,4 +19,4 @@ def totalsalary(path):
    except ValueError:
        print("Помилка, файл порожній")
 
-print(totalsalary(r'lists.txt'))
+print(total_salary('lists.txt'))
